@@ -12,7 +12,6 @@ export class ProductService {
         { id: 3, name: 'iPhone 14', price: 80000, description: 'Advanced smartphone with a stunning display, powerful A15 Bionic chip, improved cameras, and all-day battery life.', img: 'assets/img/product__img3.jpg' },
         { id: 4, name: 'Samsung Galaxy S23', price: 75000, description: 'Feature-packed smartphone with a sleek design, high-performance processor, pro-grade cameras, and vibrant AMOLED display.', img: 'assets/img/product__img4.jpg' },
         { id: 5, name: 'Apple Watch Series 9', price: 40000, description: 'Premium smartwatch with health tracking, fitness features, seamless iPhone integration, and an always-on Retina display.', img: 'assets/img/product__img5.jpg' },
-        { id: 6, name: 'Sony WH-1000XM5 Headphones', price: 25000, description: 'Industry-leading noise-canceling headphones with superior sound quality, long battery life, and a comfortable fit for all-day use.', img: 'assets/img/product__img6.jpg' }
     ];
 
     private furniture: Product[] = [
@@ -21,7 +20,6 @@ export class ProductService {
         { id: 3, name: 'King Size Bed', price: 30000, description: 'Spacious and sturdy bed with a premium mattress for ultimate comfort.', img: 'assets/img/product__img9.jpg' },
         { id: 4, name: 'Office Chair', price: 5000, description: 'Ergonomic office chair with adjustable height and lumbar support for long working hours.', img: 'assets/img/product__img10.jpg' },
         { id: 5, name: 'Bookshelf', price: 7000, description: 'Multi-tier wooden bookshelf with ample storage for books and decorative items.', img: 'assets/img/product__img11.jpg' },
-        { id: 6, name: 'Wardrobe', price: 25000, description: 'Spacious wardrobe with sliding doors, perfect for organizing clothes and accessories.', img: 'assets/img/product__img12.jpg' }
     ];
 
     private shoe: Product[] = [
@@ -30,7 +28,6 @@ export class ProductService {
         { id: 3, name: 'Puma Suede Classic', price: 6000, description: 'Timeless sneakers with a soft suede upper and durable rubber sole.', img: 'assets/img/product__img15.jpg' },
         { id: 4, name: 'Dr. Martens 1460 Boots', price: 12000, description: 'Iconic leather boots known for their durability and unique style.', img: 'assets/img/product__img16.jpg' },
         { id: 5, name: 'Reebok Nano X2', price: 9000, description: 'Versatile training shoes built for cross-training and intense workouts.', img: 'assets/img/product__img17.jpg' },
-        { id: 6, name: 'Converse Chuck Taylor All Star', price: 4000, description: 'Classic canvas sneakers with a timeless design and comfortable fit.', img: 'assets/img/product__img18.jpg' }
     ];
     
     getGadgets(): Product[] {

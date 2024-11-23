@@ -1,24 +1,60 @@
-<div>
-  <h2>Product List</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Description</th>
-        <th>Images</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr *ngFor="let product of gadget">
-        <td>{{ product.id }}</td>
-        <td>{{ product.name }}</td>
-        <td>{{ product.price }}</td>
-        <td>{{ product.description }}</td>
-        <img [src]="product.img" alt="{{ product.name }}" width="100" />
-      </tr>
-    </tbody>
-  </table>
+<div class="product container">
+    <div class="product__container" *ngFor="let product of gadget">
+        <div class="product__img">
+            <img [src]="product.img" alt="">
+        </div>
+        <div class="product__discount">
+            <div class="product__sale">Sale</div>
+            <div class="product__flashsale">12/12/2024</div>
+        </div>
+        <div class="product__info">
+            <h3 class="product__title">{{ product.name }}</h3>
+            <p class="product__price">{{ product.price }}</p>
+            <p class="product__description">{{ product.description }}</p>
+        </div>
+        <div class="product__cartbuy">
+            <p class="product__cart">Add to Cart</p>
+            <p class="product__buy">Buy Now</p>
+        </div>
+    </div>
+</div>
+<div class="product container">
+    <div class="product__container" *ngFor="let product of furniture">
+        <div class="product__img">
+            <img [src]="product.img" alt="">
+        </div>
+        <div class="product__discount">
+            <div class="product__sale">Sale</div>
+            <div class="product__flashsale">12/12/2024</div>
+        </div>
+        <div class="product__info">
+            <h3 class="product__title">{{ product.name }}</h3>
+            <p class="product__price">{{ product.price }}</p>
+            <p class="product__description">{{ product.description }}</p>
+        </div>
+        <div class="product__cartbuy">
+            <p class="product__cart">Add to Cart</p>
+            <p class="product__buy">Buy Now</p>
+        </div>
+    </div>
+</div>
+<div class="product container">
+    <div class="product__container" *ngFor="let product of shoe">
+        <div class="product__img">
+            <img [src]="product.img" alt="">
+        </div>
+        <div class="product__discount">
+            <div class="product__sale">Sale</div>
+            <div class="product__flashsale">12/12/2024</div>
+        </div>
+        <div class="product__info">
+            <h3 class="product__title">{{ product.name }}</h3>
+            <p class="product__price">{{ product.price }}</p>
+            <p class="product__description">{{ product.description }}</p>
+        </div>
+        <div class="product__cartbuy">
+            <p class="product__cart">Add to Cart</p>
+            <p class="product__buy">Buy Now</p>
+        </div>
+    </div>
 </div>

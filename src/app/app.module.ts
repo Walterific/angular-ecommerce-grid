@@ -8,15 +8,11 @@ import { RouterModule, Routes } from "@angular/router";
 import { ProductComponent } from "./components/product/product.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { HomeComponent } from "./components/home/home.component";
-import { LibraryComponent } from "./components/library/library.component";
-import { RecipeComponent } from "./components/recipe/recipe.component";
 
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
-    {path: 'product', component: ProductComponent},
-    {path: 'library', component: LibraryComponent},
-    {path: 'recipe', component: RecipeComponent},
+    {path: 'product', component: ProductComponent}
 ]
 
 @NgModule({
@@ -33,7 +29,6 @@ const routes: Routes = [
         HeaderComponent,
         HomeComponent,
         ProductComponent,
-        LibraryComponent
     ],
 
     providers: [
